@@ -1,0 +1,118 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed:400,700");
+
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width: 576px) {
+  .sm-max-w-6 {
+    max-width: 49%;
+  }
+}
+.btn {
+  cursor: pointer;
+}
+
+#contact-sec header {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.34);
+}
+
+#contact-sec form .form-group .fake-place-holder, #contact-sec form .form-group .form-icon {
+  position: absolute;
+  color: #888;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 1.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: text;
+}
+/*
+@media only screen and (max-width: 575px) {
+  #contact-sec form .form-group .fake-place-holder, #contact-sec form .form-group .form-icon {
+    top: 30%;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
+*/
+
+#contact-sec {
+    position: relative;
+    background: -webkit-linear-gradient(315deg, #00bb7e 0%, rgba(0, 187, 126, 0.63) 100%);
+    background: -o-linear-gradient(315deg, #00bb7e 0%, rgba(0, 187, 126, 0.63) 100%);
+    background: linear-gradient(135deg, #00bb7e 0%, rgba(0, 187, 126, 0.63) 100%);
+    min-height: 100vh;
+    padding: 50px 0;
+}
+#contact-sec header {
+  color: #fff;
+}
+#contact-sec header h1 {
+  font-weight: bold;
+}
+#contact-sec form {
+  margin: 50px auto;
+  max-width: 700px;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+#contact-sec form .form-group {
+  position: relative;
+}
+#contact-sec form .form-group .form-label {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+#contact-sec form .form-group .input {
+  color: #888;
+}
+#contact-sec form .form-group .input:focus + .fake-place-holder {
+  max-width: 0;
+}
+#contact-sec form .form-group input[type="submit"] {
+  font-family: 'fontAwesome','Roboto Condensed', sans-serif;
+}
+#contact-sec form .form-group .fake-place-holder {
+  max-width: 180px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#contact-sec form .form-group .form-icon {
+  left: 0.25rem;
+}
+#contact-sec form textarea {
+  height: 250px;
+}
+@media only screen and (max-width: 575px) {
+  #contact-sec form textarea {
+    height: 150px;
+  }
+}
+#contact-sec form textarea + #place-message {
+  top: 1.25rem;
+  left: .75rem;
+}
+@media only screen and (max-width: 575px) {
+  #contact-sec form textarea + #place-message {
+    top: 1.25rem;
+  }
+}
+#contact-sec form .hire a {
+  font-weight: bold;
+    color: #FFF;
+}
