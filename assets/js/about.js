@@ -84,7 +84,9 @@ $(document).ready(function () {
     
     item.each(function () {
         
-        var $this = $(this);
+        var $this = $(this),
+            bigWord,
+            sliced;
         
         // turning percentage into value
                 
@@ -99,8 +101,21 @@ $(document).ready(function () {
         if ($this.data('percentage') >= 90) {
             $this.attr('data-value', 'expert');
         }
+        
+        // slice the long length words
 
         $this.find($('.percent')).text($this.data('value'));
+        
+        if ($this.data('value').length > 7) {
+            $this.find($('.percent')).text($this.data('value').slice(0, 7) + '..');
+            
+            $this.find($('.percent')).on('mouseover', function () {
+                $(this).text($this.data('value'));
+            });
+            $this.find($('.percent')).on('mouseout', function () {
+                $(this).text($this.data('value').slice(0, 7) + '..');
+            });
+        }
 
         function progress(value) {
             var progressVal = value / 100,
