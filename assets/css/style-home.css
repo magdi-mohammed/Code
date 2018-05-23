@@ -1,0 +1,229 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#home-sec .full-page-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    -webkit-perspective: 600px;
+            perspective: 600px  
+}
+
+
+/* Custom */
+
+#home-sec .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 24px;
+    z-index: 15
+}
+
+.sm #home-sec  .content .content-body {
+    padding: 0 20px
+}
+
+.sm #home-sec  .left-section .content .content-body {
+    margin-top: 40px
+}
+
+.sm #home-sec  .full-page-container {
+    display: block;
+}
+
+#home-sec  .content .content-body .head .h4 {
+    font-weight: bold;
+}
+
+/* div border */
+
+.lg #home-sec  .border-bg {
+    position: absolute;
+    z-index: 5;
+    top: 12px;
+    left: 12px;
+    width: calc(50% - 24px);
+    height: calc(100% - 24px);
+    border: 2px solid #3e8e8e;
+    
+}
+
+.sm #home-sec  .border-bg {
+    display: none;
+    visibility: hidden
+}
+
+.lg #home-sec  .border-bg.animated {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease
+}
+
+.lg #home-sec  .m-right {
+    margin-right: 0;
+    margin-left: 50%
+}
+.lg #home-sec  .m-left {
+    margin-right: 50%;
+    margin-left: 0
+}
+
+.sm #home-sec  .content .logo img {
+    display: block;
+    margin: auto;
+}
+
+
+/* start lefts section */
+
+#home-sec .left-section {
+    width: 50%;
+    padding: 24px;
+    background-color: #2b2e2f;
+    position: relative;
+    
+}
+
+#home-sec .left-section #left-section-before {
+    position: absolute;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../images/01-home/home-bg-gradient.png');
+}
+
+.sm #home-sec .left-section {
+    width: 100%;
+    min-height: 500px
+}
+
+/* start content */
+
+#home-sec .left-section .content .logo {
+    text-align: left;
+    margin-left: 10px
+}
+
+#home-sec .left-section .content {
+    text-align: center;
+    color: #fff
+}
+
+#home-sec .left-section .content .content-body,
+#home-sec .right-section .content .content-body 
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%)
+}
+
+#home-sec .left-section .content .head h1 {
+}
+
+#home-sec .left-section .content .head p {
+    font-size: 20px
+}
+
+#home-sec .left-section .content .button {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    margin-top: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: none
+}
+
+/* end content */
+
+/* end left section */
+/* start right section */
+
+#home-sec .right-section {
+    width: 50%;
+    padding: 24px;
+    background-color: #fff;
+    position: relative;
+}
+
+#home-sec .right-section #right-section-before {
+    position: absolute;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../images/01-home/home-bg-gradient.png');
+}
+
+.sm #home-sec .right-section {
+    width: 100%;
+    min-height: 50vh
+}
+
+/* start content */
+
+#home-sec .right-section .content {
+    text-align: center;
+    color: #000
+}
+
+#home-sec .right-section .content .button {
+    color: inherit;
+    text-decoration: none;
+}
+
+#home-sec .right-section .content .content-body h2 .button .more-arrow {
+    vertical-align: middle;
+    margin-left: 7px;
+    animation: arrowmovin 3s ease-in-out infinite
+}
+
+@keyframes arrowmovin {
+    0%, 100% {
+        margin-left: 7px;
+    }
+    
+    50% {
+        margin-left: 14px;
+    }
+}
+
+/* end right section */
+
+#home-sec .content .button:hover,
+#home-sec .content .button:active
+{
+    text-decoration: underline
+}

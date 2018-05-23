@@ -1,0 +1,70 @@
+/*
+.tabs {
+    visibility: hidden;
+    display: none
+}
+*/
+
+#about-me-sec .mobile-tabs {
+    max-width: 90%
+}
+
+/* tabs animation */
+
+#about-me-sec .tabs .tab-item.animated:nth-of-type(2) {
+    width: 33.3%;
+    left: 0;
+    -webkit-transform: translate(0%, 200%);
+        -ms-transform: translate(0%, 200%);
+            transform: translate(0%, 200%)
+}
+#about-me-sec .tabs .tab-item.animated:nth-of-type(3) {
+    width: 33.3%;
+    left: 33%;
+    -webkit-transform: translate(0%, 200%);
+        -ms-transform: translate(0%, 200%);
+            transform: translate(0%, 200%)
+}
+#about-me-sec .tabs .tab-item.animated:last-of-type {
+    width: 33.3%;
+    left: 66%;
+    -webkit-transform: translate(0%, 200%);
+        -ms-transform: translate(0%, 200%);
+            transform: translate(0%, 200%)
+}
+
+/* global info-item cards */
+
+.description .info-item.one.active,
+.description .info-item.two.active,
+.description .info-item.three.active
+
+{
+    max-width: 90%;
+    display: block !important
+}
+
+#about-me-sec .description .info-item.one .left-card {
+    height: 370px;
+}
+
+#about-me-sec .description .info-item.one .right-card {
+    -webkit-box-shadow: 0px 20px 30px -10px #10003b inset;
+            box-shadow: 0px 20px 30px -10px #10003b inset
+}
+
+/* info item two card */
+
+@media screen and (max-width: 590px) {
+    #about-me-sec .description .info-item.two .info-body .soft-skills-list-item {
+        width: 100%
+    }
+}
+
+/* info item three card */
+
+@media screen and (max-width: 590px) {
+    #about-me-sec .description .info-item.three .info-body .technical-skills-list .technical-skills-list-item {
+        width: 100%
+    }
+}
