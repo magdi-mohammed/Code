@@ -187,7 +187,7 @@ html, body {
   background-image: url("../images/03-work/company.png");
 }
 #work-sec .project-bg:nth-of-type(3) .content .project-card .project-image {
-  background-image: url("../images/03-work/company.png");
+  background-image: url("../images/03-work/memory-game.png");
 }
 #work-sec .project-bg:nth-of-type(even) .content {
   float: right;
